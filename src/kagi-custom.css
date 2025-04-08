@@ -1,3 +1,4 @@
+/* Trying to make result titles look/behave a bit more like Google's */
 :root {
   --search-result-title: var(--purple-400);
 }
@@ -16,11 +17,13 @@
   border-bottom: unset;
 }
 
+/* Favicons are a bit hard to see in Kagi's dark mode - this is a first attempt at making it a bit better */
 img.__domain-favicon {
   background-color: white;
   box-shadow: 0px 0px 2px 2px white;
 }
 
+/* Making the header sticky and transparent. Source (modified a bit): https://github.com/pdanzma/kagi-css/blob/51c7689c9657bea293f14b9acba6d773c201b3a6/custom.css#L74 */
 header.app-header.app-content-box {
   position: sticky;
   top: 0;
