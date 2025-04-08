@@ -1,0 +1,17 @@
+:root {
+  --search-result-title: var(--purple-400);
+}
+
+.__sri-title {
+  margin-bottom: 0px;
+}
+
+.search-result:has(:is(.__sri-title-box, .__sri-url-box) a:hover)
+  :is(.__sri_title_link, .__sri-url),
+.__srgi-title a:hover {
+  text-decoration: underline;
+}
+
+.__sri-title ._0_URL:is(:hover, :not(:hover)) {
+  border-bottom: unset;
+}
