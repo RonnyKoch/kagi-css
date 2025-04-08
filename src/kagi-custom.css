@@ -15,3 +15,8 @@
 .__sri-title ._0_URL:is(:hover, :not(:hover)) {
   border-bottom: unset;
 }
+
+img.__domain-favicon {
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px white;
+}
