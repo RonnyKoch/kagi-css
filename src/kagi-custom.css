@@ -1,6 +1,6 @@
 /* Trying to make result titles look/behave a bit more like Google's */
 :root {
-  --search-result-title: var(--purple-400);
+  --search-result-title: var(--primary-hover);
 }
 
 .__sri-title {
@@ -36,10 +36,9 @@ header.app-header.app-content-box {
   position: sticky;
   top: 0;
   z-index: 113;
-  background: rgba(26, 28, 35, 0.8);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+  background: rgb(from var(--app-bg) r g b / 0.8);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(35, 35, 37, 0.3);
 }
 
 /* Make sure the "Quick Answer" info tooltip shows above the header */
