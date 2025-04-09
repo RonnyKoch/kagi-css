@@ -35,7 +35,7 @@ img.__domain-favicon {
 header.app-header.app-content-box {
   position: sticky;
   top: 0;
-  z-index: 113;
+  z-index: 100;
   background: rgb(from var(--app-bg) r g b / 0.8);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
