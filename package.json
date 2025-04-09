@@ -1,6 +1,7 @@
 {
   "name": "kagi-css",
   "author": "Ronny Koch",
+  "private": true,
   "description": "My personal collection of Kagi custom css rules.",
   "scripts": {
     "build": "lightningcss --minify --bundle --browserslist src/kagi-custom.css -o output/kagi-custom.css"
