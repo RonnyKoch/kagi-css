@@ -37,7 +37,7 @@ header.app-header.app-content-box {
   top: 0;
   z-index: 100;
   background: rgb(from var(--app-bg) r g b / 0.8);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px var(--box-shadow);
   backdrop-filter: blur(15px);
 }
 
