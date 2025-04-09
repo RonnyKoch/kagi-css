@@ -35,9 +35,14 @@ img.__domain-favicon {
 header.app-header.app-content-box {
   position: sticky;
   top: 0;
-  z-index: 114;
+  z-index: 113;
   background: rgba(26, 28, 35, 0.8);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(35, 35, 37, 0.3);
+}
+
+/* Make sure the "Quick Answer" info tooltip shows above the header */
+.tooltip.end.tooltip_base.top {
+  z-index: 114;
 }
