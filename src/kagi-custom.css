@@ -45,3 +45,9 @@ header.app-header.app-content-box {
 .tooltip.end.tooltip_base.top {
   z-index: 114;
 }
+
+/* Visually separate the Summary Box a bit more from the main search result list */
+.right-content-box > div {
+  border-left: 1px solid var(--primary-100);
+  padding-left: 20px;
+}
