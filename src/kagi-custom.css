@@ -27,7 +27,7 @@ img.__domain-favicon {
 header.app-header.app-content-box {
   position: sticky;
   top: 0;
-  z-index: 150;
+  z-index: 114;
   background: rgba(26, 28, 35, 0.8);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
