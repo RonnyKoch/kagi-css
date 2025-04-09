@@ -7,10 +7,18 @@
   margin-bottom: 0px;
 }
 
+.search-result:has(:is(.__sri-title-box, .__sri-url-box) a)
+  :is(.__sri_title_link, .__sri-url),
+.__srgi-title a {
+  text-decoration: underline transparent;
+  transition: text-decoration-color 75ms ease-out;
+}
+
 .search-result:has(:is(.__sri-title-box, .__sri-url-box) a:hover)
   :is(.__sri_title_link, .__sri-url),
 .__srgi-title a:hover {
-  text-decoration: underline;
+  text-decoration-color: unset;
+  transition: none;
 }
 
 .__sri-title ._0_URL:is(:hover, :not(:hover)) {
