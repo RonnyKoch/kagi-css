@@ -9,20 +9,23 @@
 
 .search-result:has(:is(.__sri-title-box, .__sri-url-box) a)
   :is(.__sri_title_link, .__sri-url),
-.__srgi-title a {
+:is(.__srgi-title, .wikipediaResult) a {
   text-decoration: underline transparent;
   transition: text-decoration-color 110ms ease-in;
 }
 
 .search-result:has(:is(.__sri-title-box, .__sri-url-box) a:hover)
   :is(.__sri_title_link, .__sri-url),
-.__srgi-title a:hover {
+:is(.__srgi-title, .wikipediaResult) a:hover {
   text-decoration-color: unset;
   transition: none;
 }
 
-.__sri-title ._0_URL:is(:hover, :not(:hover)) {
-  border-bottom: unset;
+.__sri-title ._0_URL,
+.wikipediaResult a {
+  &:is(:hover, :not(:hover)) {
+    border-bottom: unset;
+  }
 }
 
 /* Favicons are a bit hard to see in Kagi's dark mode - this is a first attempt at making it a bit better */
@@ -58,4 +61,9 @@ header.app-header.app-content-box {
   > .auto_suggestions_in
   > .auto_item.highlighted {
   background-color: var(--inline-widget-hover-bg);
+}
+
+/* Remove link underline in Wikipedia info box */
+.wikipediaResult a {
+  border-bottom: unset;
 }
