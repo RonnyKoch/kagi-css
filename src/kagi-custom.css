@@ -11,7 +11,7 @@
   :is(.__sri_title_link, .__sri-url),
 .__srgi-title a {
   text-decoration: underline transparent;
-  transition: text-decoration-color 75ms ease-out;
+  transition: text-decoration-color 110ms ease-in;
 }
 
 .search-result:has(:is(.__sri-title-box, .__sri-url-box) a:hover)
