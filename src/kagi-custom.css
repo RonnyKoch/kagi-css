@@ -16,13 +16,14 @@
 
 .search-result:has(:is(.__sri-title-box, .__sri-url-box) a:hover)
   :is(.__sri_title_link, .__sri-url),
-:is(.__srgi-title, .wikipediaResult) a:hover {
+:is(.__srgi-title, .wikipediaResult, .wikipediaResult .wiki-title) a:hover {
+  text-decoration-line: underline;
   text-decoration-color: unset;
   transition: none;
 }
 
 .__sri-title ._0_URL,
-.wikipediaResult a {
+:is(.wikipediaResult, .wikipediaResult .wiki-title) a {
   &:is(:hover, :not(:hover)) {
     border-bottom: unset;
   }
@@ -61,9 +62,4 @@ header.app-header.app-content-box {
   > .auto_suggestions_in
   > .auto_item.highlighted {
   background-color: var(--inline-widget-hover-bg);
-}
-
-/* Remove link underline in Wikipedia info box */
-.wikipediaResult a {
-  border-bottom: unset;
 }
