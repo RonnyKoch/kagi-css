@@ -1,5 +1,6 @@
 /* Trying to make result titles look/behave a bit more like Google's */
 :root {
+  --primary-visited: var(--primary-hover);
   --search-result-title: var(--primary-hover);
 }
 
