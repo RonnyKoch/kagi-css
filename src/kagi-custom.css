@@ -36,6 +36,11 @@ img.__domain-favicon {
   box-shadow: 0px 0px 2px 2px white;
 }
 
+/* Some Wikipedia box main images don't work well on dark background */
+.wiki-image a img {
+  background-color: white;
+}
+
 /* Making the header sticky and transparent. Source (modified a bit): https://github.com/pdanzma/kagi-css/blob/51c7689c9657bea293f14b9acba6d773c201b3a6/custom.css#L74 */
 header.app-header.app-content-box {
   position: sticky;
