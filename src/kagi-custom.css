@@ -2,6 +2,10 @@
 :root {
   --primary-visited: var(--primary-hover);
   --search-result-title: var(--primary-hover);
+
+  /* Turn off Kagi's image brightness filter */
+  --image_brightness: 100%;
+  --landing-page-clouds-opacity: 1;
 }
 
 .__sri-title {
