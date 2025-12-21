@@ -73,3 +73,12 @@ header.app-header.app-content-box {
   > .auto_item.highlighted {
   background-color: var(--inline-widget-hover-bg);
 }
+
+/* Top nav underline should have full width */
+.app-nav {
+  border-bottom: unset;
+}
+
+header.app-header.app-content-box {
+  border-bottom: 1px solid var(--primary-100);
+}
