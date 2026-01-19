@@ -58,7 +58,17 @@ header.app-header.app-content-box {
   z-index: 100;
   background: rgb(from var(--app-bg) r g b / 0.7);
   box-shadow: 0 4px 15px var(--box-shadow);
-  backdrop-filter: blur(10px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
 }
 
 /* Make sure the "Quick Answer" info tooltip shows above the header */
