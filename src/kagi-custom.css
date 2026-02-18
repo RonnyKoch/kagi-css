@@ -53,6 +53,7 @@ img.__domain-favicon {
 
 /* Making the header sticky and transparent. Source (modified a bit): https://github.com/pdanzma/kagi-css/blob/51c7689c9657bea293f14b9acba6d773c201b3a6/custom.css#L74 */
 header.app-header.app-content-box {
+  max-width: unset;
   position: sticky;
   top: 0;
   z-index: 100;
